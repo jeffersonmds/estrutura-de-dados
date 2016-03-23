@@ -178,7 +178,7 @@ def avaliar(expressao):
                         val = pilha.desempilhar() / val
                     pilha.empilhar(val)
                     val = ''
-                elif str(pilha.topo()) in ')}]' and i == fila.__len__() - 1:
+                elif str(pilha.topo()) in ')}]' and i==fila.__len__() - 1:
                     pilha.desempilhar()
                     
                     while len(pilha)>1:
