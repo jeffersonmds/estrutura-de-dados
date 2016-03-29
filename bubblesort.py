@@ -1,15 +1,15 @@
-def bubble_sort(valor):
+def bubble_sort(seq):
     '''
     Tempo: O(n^2)
     Memoria: O(1)
     '''
-    tam = len(valor)-1
+    tam = len(seq)-1
     for cont in range(tam):
-        if valor == sorted(valor):
-            return valor
+        if seq == sorted(seq):
+            return seq
         for cont2 in range(tam):
-            if valor[cont2]>valor[cont2+1]: valor[cont2], valor[cont2+1]=valor[cont2+1], valor[cont2]
-    return valor
+            if seq[cont2]>seq[cont2+1]: seq[cont2], seq[cont2+1]=seq[cont2+1], seq[cont2]
+    return seq
 
 import unittest
 class OrdenacaoTestes(unittest.TestCase):
